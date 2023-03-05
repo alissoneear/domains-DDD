@@ -38,7 +38,7 @@ public class SubscriptionHandler :
             AddNotification("Document", "Este CPF já está em uso");
 
         //Verificar se o E-mail já está cadastrado
-        if (_repository.DocumentExists(command.Email))
+        if (_repository.EmailExists(command.Email))
             AddNotification("Email", "Este E-mail já está em uso");
 
         //Gerar os VOs
